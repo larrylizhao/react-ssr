@@ -6,7 +6,8 @@
   "scripts": {
     "build:client": "babel ./src/client --out-dir ./src/client/es5 --copy-files",
     "build:server": "webpack",
-    "build": "yarn build:client && yarn build:server"
+    "build": "yarn build:client && yarn build:server",
+    "start": "node ./src/server/server.js"
   },
   "dependencies": {
     "html-webpack-plugin": "^4.3.0",
