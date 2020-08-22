@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build:client": "babel ./src/client --out-dir ./src/client/es5 --copy-files",
-    "build:server": "webpack",
+    "build:server": "rm -R ./src/client/es5; babel ./src/client --out-dir ./src/client/es5 --copy-files",
+    "build:client": "webpack",
     "build": "yarn build:client && yarn build:server",
-    "start": "node ./src/server/server.js"
+    "start": "nodemon ./src/server/server.js"
   },
   "dependencies": {
     "html-webpack-plugin": "^4.3.0",
