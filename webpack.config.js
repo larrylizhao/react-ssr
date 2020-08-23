@@ -2,6 +2,7 @@ const path= require('path');
 const HtmlPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
+//用于build纯client side的bundle
 module.exports = {
     mode: 'development',
     devtool: 'eval-source-map',
