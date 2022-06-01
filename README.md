@@ -1,2 +1,2 @@
 # react-ssr
-React server side rendering
+React server side rendering and client side rendering
