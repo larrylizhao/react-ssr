@@ -1,9 +1,9 @@
-require('@babel/register');
+// require('@babel/register');
 const express = require('express');
 const app = express();
 const React = require('react');
 const ReactDOMServer = require('react-dom/server');
-const App = require('../client/app-commonjs');
+const App = require('../client/es5/app-commonjs');
 
 //renderToString 接收的是React Element, server端无法使用未经编译的jsx<App />
 const html = ReactDOMServer.renderToString(React.createElement(App, null));
