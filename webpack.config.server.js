@@ -8,8 +8,7 @@ module.exports = {
     entry: path.join(__dirname, 'src/client/app'),
     output: {
         filename: "app.js",
-        path: path.resolve(__dirname, 'src/server'),
-        libraryTarget: "commonjs2"
+        path: path.resolve(__dirname, 'src/server')
     },
     module: {
         rules: [
