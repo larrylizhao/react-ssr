@@ -1,6 +1,7 @@
 //需要引入React以使用JSX
 import React from 'react';
 import { render } from 'react-dom';
+import tailwind from '../main.css';
 // import App from './app';
 const App = require('./app-commonjs');
 
