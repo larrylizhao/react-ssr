@@ -3,3 +3,4 @@ node_modules/
 dist/
 yarn.lock
 src/client/es5
+*.DS_Store
