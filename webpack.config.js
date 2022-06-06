@@ -18,7 +18,7 @@ module.exports = {
                 use: ['style-loader', "css-loader", 'postcss-loader'],
             },
             {
-                test: /\.(js|jsx)$/,
+                test: /\.jsx?$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/
             }
