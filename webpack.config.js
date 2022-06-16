@@ -9,7 +9,7 @@ module.exports = {
     entry: path.join(__dirname, 'src/client/index'),
     output: {
         filename: "bundle.js",
-        path: path.resolve(__dirname, 'dist')
+        path: path.join(__dirname, 'dist')
     },
     module: {
         rules: [
@@ -26,7 +26,7 @@ module.exports = {
     },
     plugins: [
         new HtmlPlugin({
-            template: path.resolve(__dirname, 'src/client/index.html')
+            template: path.join(__dirname, 'src/client/index.html')
         }),
         new webpack.HotModuleReplacementPlugin()
     ],
